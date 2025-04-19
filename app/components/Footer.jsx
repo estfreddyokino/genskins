@@ -63,10 +63,10 @@ export function Footer() {
             PRECISA DE AJUDA?
           </p>
           <ul className="space-y-1 text-center">
-            <li>
+            <li style={{marginTop: '10px'}}>
               <a
                 href="/politica-de-frete"
-                style={{color: '#8b8c8d', fontWeight: '600'}}
+                style={{color: '#8b8c8d', fontWeight: '600', marginTop: '20px'}}
               >
                 Políticas de frete
               </a>

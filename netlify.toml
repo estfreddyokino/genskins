@@ -1,0 +1,8 @@
+[build]
+  # Pasta onde estão os arquivos estáticos gerados pela build (cliente)
+  publish = "dist/client"
+  # Pasta onde estão as funções do Netlify (servidor)
+  functions = "netlify/functions"
+
+[[plugins]]
+  package = "@netlify/plugin-functions"
