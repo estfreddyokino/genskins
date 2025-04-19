@@ -47,16 +47,23 @@ export function CartMain({layout, cart: originalCart}) {
 function CartEmpty({hidden = false}) {
   const {close} = useAside();
   return (
-    <div hidden={hidden}>
+    <div
+      hidden={hidden}
+      style={{
+        marginTop: "50%",
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        color: 'blue',
+        textAlign: 'center', // Centraliza horizontalmente o texto
+        fontWeight: 'bold', // Deixa a letra mais grossa
+      }}
+    >
       <br />
-      <p>
-        Looks like you haven&rsquo;t added anything yet, let&rsquo;s get you
-        started!
-      </p>
+      <p>Carrinho vazio!</p>
       <br />
-      <Link to="/collections" onClick={close} prefetch="viewport">
-        Continue shopping →
-      </Link>
     </div>
   );
 }
